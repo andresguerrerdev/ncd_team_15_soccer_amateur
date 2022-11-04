@@ -77,7 +77,7 @@ impl Contract {
     
     pub fn add_player(&mut self, first_name: String, last_name: String, year: u64, price: u128, number:u64, position: String, index:usize) {
         
-        pay_register_player();
+        self.pay_register_player();
         let aux =  Player{first_name: first_name.to_string(), last_name: last_name.to_string(),year:year,price : price, number:number,position:position.to_string()};
         // self.list_players.push(aux);
         self.team_list[index].list_players.push(aux);
